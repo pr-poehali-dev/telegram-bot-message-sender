@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {
+      "name": "Get all subscribers",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": [
+        {
+          "id": "number",
+          "telegram_id": "number",
+          "username": "string",
+          "first_name": "string",
+          "last_name": "string",
+          "is_active": "boolean",
+          "subscribed_at": "string"
+        }
+      ],
+      "bodyMatcher": "partial"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {
+      "name": "Get all broadcast messages",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": [
+        {
+          "id": "number",
+          "message_text": "string",
+          "created_at": "string",
+          "status": "string",
+          "total_recipients": "number",
+          "successful_sends": "number",
+          "failed_sends": "number"
+        }
+      ],
+      "bodyMatcher": "partial"
+    }
+  ]
+}
